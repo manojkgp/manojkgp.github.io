@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<!-- Load c3.css -->
+<link href="c3-0.4.11\c3.css" rel="stylesheet" type="text/css">
+
+<!-- Load d3.js and c3.js -->
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="c3-0.4.11\c3.min.js"></script>
+
+<div id="chart"></div>
+
+<script>
+  var chart = c3.generate({
+    bindto: document.getElementById('chart'),
+    data: {
+        columns: [
+            ['data1', 28.3,30.3,37.5,36,31.5,31.6,29.5,32.9,39,50.4,56.8,57.3],
+            ['data2', 23.8,21.5,26.6,17.5,14.9,22.7,23.7,26.3,26.3,34.6,39.9,48]
+        ]
+    }
+});
+</script>
+
+
+
+
+</body>
+</html>
+
